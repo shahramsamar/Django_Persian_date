@@ -1,7 +1,4 @@
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+
     {% for post in blog_posts %}
     <div class="card-body">
         <h5 class="card-title"><a href="#">{{ post.title }}</a></h5>
@@ -19,5 +17,6 @@
         <span class="small">{{ post.persian_created_date }}</span>
     </div>
     {% endfor %}
+
 </body>
 </html>

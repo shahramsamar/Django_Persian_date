@@ -15,7 +15,7 @@ def index_views(request):
     return render(request,'index.html',{'blog_posts': blog_posts})
 
 
-def index_temp(request):
+def index_templatetags(request):
     blog_posts = BlogPost.objects.all()
-    return render(request,'index_temp.html',{'blog_posts': blog_posts})
+    return render(request,'index_templatetags.html',{'blog_posts': blog_posts})
 
