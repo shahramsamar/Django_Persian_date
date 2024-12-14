@@ -1,0 +1,23 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for post in blog_posts %}
+    <div class="card-body">
+        <h5 class="card-title"><a href="#">{{ post.title }}</a></h5>
+        <p>{{ post.content|safe }}</p>
+
+        <!-- Display the Persian formatted date -->
+        <span class="small">{{ post.persian_created_date }}</span>
+    </div>
+    {% endfor %}
+</body>
+</html>
